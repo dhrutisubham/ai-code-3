@@ -11,10 +11,10 @@ const ChatArea = () => {
     };
 
     return (
-        <>
+        <section className='chatArea'>
             <CodeTextArea inputValue={inputValue}/>
             <DataTextField onInputChange={handleInputChange} />
-        </>
+        </section>
     );
 }
 

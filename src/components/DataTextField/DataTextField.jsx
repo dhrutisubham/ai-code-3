@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './DataTextField.css';
 
 const DataTextField = ({ onInputChange })=> {
     const [inputValue, setInputValue] = useState('');
@@ -28,7 +29,7 @@ const DataTextField = ({ onInputChange })=> {
             onChange={handleChange}
             onKeyDown={handleKeyDown}
         />
-      <button onClick={handleClick}>Submit</button>
+      <button className='black_btn' onClick={handleClick}>Submit</button>
     </div>
     );
 }

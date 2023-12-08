@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background: #EBEEF0;
+  font-family: 'Roboto',sans-serif;
+}
+
+.chatArea{
+  flex-grow: 5;
+
+}
+
+.sideBar{
+  flex-grow: 1;
+
+}
+
+.home{
+  @apply flex flex-row items-start w-full;
+}
+.black_btn {
+  @apply font-bold rounded-lg border border-black bg-black1 py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black1 text-center text-sm font-roboto flex items-center justify-center;
+}
 /* #root {
   max-width: 1280px;
   margin: 0 auto;

@@ -1,0 +1,19 @@
+.sideBar{
+    @apply h-screen rounded-r-xl bg-white1 drop-shadow-xl;
+
+}
+
+.logoContainer{
+    display: block;
+    width: 100%;
+    height: 10%;
+    max-height: 100px;
+    
+    @apply px-5 pt-5 pb-2 drop-shadow bg-white1 border border-white2 z-10 relative;
+}
+
+.trumioLogo{
+    height: 100%;
+    max-width: 150px;
+
+}
