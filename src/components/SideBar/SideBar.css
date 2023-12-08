@@ -12,8 +12,16 @@
     @apply px-5 pt-5 pb-2 drop-shadow bg-white1 border border-white2 z-10 relative;
 }
 
+.option{
+   @apply flex gap-3.5 hover:bg-white2 pl-7 p-2 py-2.5 items-center;
+}
+
 .trumioLogo{
     height: 100%;
     max-width: 150px;
 
+}
+
+.navPanelOptionLogo{
+    @apply h-1/2;
 }
