@@ -1,0 +1,22 @@
+.navBar{
+    @apply flex items-center gap-3 w-full mb-2.5 max-h-16 min-h-[2.5rem];
+    height: 8%;
+}
+
+.searchSection{
+    width: fit-content;
+    height: 100%;
+    flex-grow: 99999;
+}
+
+.navButton{
+    height: 100%;
+
+    @apply aspect-square flex items-center justify-center bg-white1 drop-shadow rounded-xl;
+}
+.searchBar{
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+
+    @apply w-full h-full p-4 rounded-xl text-sm font-light transform-gpu transition-all disabled:drop-shadow enabled:border-0 enabled:outline-0 focus:drop-shadow-md  ease-in bg-white1 text-black1;
+}

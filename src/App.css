@@ -4,15 +4,18 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  height: 100%;
+}
+
 body{
   background: #EBEEF0;
   font-family: 'Roboto',sans-serif;
+  height: 100svh;
+  margin: 0;
+  padding: 0;
 }
 
-.chatArea{
-  flex-grow: 7;
-
-}
 
 .sideBar{
   flex-grow: 1;
@@ -20,7 +23,8 @@ body{
 }
 
 .home{
-  @apply flex flex-row items-start w-full;
+  @apply h-screen flex flex-col grow-[9] items-stretch p-5;
+
 }
 .black_btn {
   @apply font-bold rounded-lg border border-black bg-black1 py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black1 text-center text-sm font-roboto flex items-center justify-center;
