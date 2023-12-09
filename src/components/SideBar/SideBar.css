@@ -1,5 +1,5 @@
 .sideBar{
-    @apply h-screen rounded-r-xl bg-white1 drop-shadow-xl overflow-hidden;
+    @apply h-screen rounded-r-xl bg-white1 drop-shadow-xl overflow-hidden sticky;
 
 }
 
