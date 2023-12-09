@@ -5,13 +5,22 @@
 @tailwind utilities;
 
 html{
-  height: 100%;
+  height: fit-content;
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+  display: inline-block;
+}
+
+*{
+  font-family: 'Roboto',sans-serif;
+
 }
 
 body{
   background: #EBEEF0;
   font-family: 'Roboto',sans-serif;
-  height: 100svh;
+  height: fit-content;
   margin: 0;
   padding: 0;
 }
@@ -22,13 +31,18 @@ body{
 
 }
 
-.home{
+.main{
   @apply h-screen flex flex-col grow-[9] items-stretch p-5;
 
 }
 .black_btn {
-  @apply font-bold rounded-lg border border-black bg-black1 py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black1 text-center text-sm font-roboto flex items-center justify-center;
+  @apply font-bold rounded-lg border border-2 border-black1 bg-black1 py-3 px-5 text-white transition-all hover:bg-white hover:text-black1 text-center text-sm font-roboto flex items-center justify-center transition-all ease-in;
 }
+
+.outline_btn{
+  @apply text-xs text-black1 border border-black1 rounded-lg font-bold w-fit p-2 px-4 hover:bg-black1 hover:text-white1 transition-all ease-in;
+}
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;

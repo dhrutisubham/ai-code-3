@@ -1,12 +1,12 @@
 .navBar{
-    @apply flex items-center gap-3 w-full mb-2.5 max-h-16 min-h-[2.5rem] sticky;
+    @apply flex items-center gap-3 w-full max-h-16 min-h-[2.5rem] sticky;
     height: 8%;
 }
 
 .searchSection{
     width: fit-content;
     height: 100%;
-    flex-grow: 9;
+    flex-grow: 10;
     display: inline-block;
 }
 
@@ -19,18 +19,25 @@
 
     @apply aspect-square flex items-center justify-center bg-white1 drop-shadow rounded-xl transform-gpu transition-all hover:scale-[1.048] ease-in hover:drop-shadow-md;
 }
+
+.icon{
+    @apply aspect-square max-h-16;
+}
 .searchBar{
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
     display: inline-block;
 
 
-    @apply w-full h-full p-4 pl-[7%] rounded-xl text-sm font-light transform-gpu transition-all drop-shadow enabled:border-0 enabled:outline-0 focus:drop-shadow-md ease-in bg-white1 text-black1;
+    @apply w-full h-full p-4 rounded-xl text-sm font-light transform-gpu transition-all drop-shadow enabled:border-0 enabled:outline-0 focus:drop-shadow-md ease-in bg-white1 text-black1;
+
+    padding-left:2.5rem;
+
 }
 
 .searchIcon{
     display: inline-block;
-    height: 100%;
+    max-height: 100%;
     width: 100%;
     position: relative;
 }
@@ -48,7 +55,7 @@
     background-size: cover;
     position: absolute;
     top: 50%;
-    left: 4%;
+    left: 1.5rem;
     transform: translate(-50%, -50%);
     z-index: 100;
 }

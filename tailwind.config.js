@@ -18,6 +18,7 @@ export default {
         'white2': '#F7F9FA',
         'white3': '#EBEEF0',
         'grey6': '#4E5860',
+        'grey3': '#768088',
         'blue1': '#0057A5',
         'red': '#E91655'
       }

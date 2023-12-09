@@ -1,4 +1,5 @@
 .profileHead{
 
-    @apply flex gap-2 h-full py-1.5 px-3 bg-white1 drop-shadow rounded-xl grow-[1] min-w-[150px] transform-gpu transition-all cursor-pointer hover:scale-[1.048] ease-in hover:drop-shadow-md;
+    @apply flex gap-2 h-full py-1.5 px-3 pr-4 bg-white1 drop-shadow rounded-xl grow-[4] min-w-[150px] transform-gpu transition-all cursor-pointer hover:scale-[1.048] ease-in hover:drop-shadow-md;
 }
+

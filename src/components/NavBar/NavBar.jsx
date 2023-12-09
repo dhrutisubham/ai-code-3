@@ -18,23 +18,7 @@ const NavBar = () => {
         </span>
         </form>
 
-        {/* Upload Button */}
-        <button className='navButton'>
-            <img src='public/assets/icons/NavBar/upload.svg' 
-                alt='Upload Icon'
-            ></img>
-        </button>
-
-        {/* Notification Button */}
-        <button className='navButton'>
-            <img src='public/assets/icons/NavBar/notification.svg' 
-                alt='Notification Icon'
-            ></img>
-        </button>
-
-
-        {/* Profile Section  */}
-        <ProfileHead></ProfileHead>
+        
 
     </section>
   )

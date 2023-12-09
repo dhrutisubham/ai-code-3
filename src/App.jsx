@@ -8,13 +8,14 @@ import Home from './pages/Home/Home';
 function App() {
   return (
     <section className='h-full flex flex-row items-start'>
-      <SideBar/>
-
-      <section className='home'>
-        <NavBar></NavBar>
-        <Home></Home>
-        {/* <UpdateBar></UpdateBar>         */}
-      </section>
+        <SideBar/>
+        <section className='p-3 grow-[9] gap-3 h-screen flex'>
+          <section className='flex flex-col gap-3 h-full grow-[6]'>
+            <NavBar></NavBar>
+            <Home></Home>
+          </section>    
+          <UpdateBar></UpdateBar>
+        </section>
 
     </section>
   );

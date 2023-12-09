@@ -13,7 +13,7 @@
 }
 
 .option{
-   @apply flex gap-3.5 hover:bg-white2 pl-7 p-2 py-2.5 items-center;
+   @apply flex gap-3.5 hover:bg-white2 pl-7 p-2 py-2.5 items-center transition-all ease-in;
 }
 
 .trumioLogo{

@@ -4,10 +4,9 @@ import ChatArea from '../../components/ChatArea/ChatArea'
 
 const home = () => {
   return (
-    <>
-        <ChatArea/>
-    
-    </>
+    <section className='h-full rounded-lg'>
+      Home
+    </section>
   )
 }
 
