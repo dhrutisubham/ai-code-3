@@ -13,7 +13,7 @@ function App() {
       <section className='home'>
         <NavBar></NavBar>
         <Home></Home>
-        <UpdateBar></UpdateBar>        
+        {/* <UpdateBar></UpdateBar>         */}
       </section>
 
     </section>

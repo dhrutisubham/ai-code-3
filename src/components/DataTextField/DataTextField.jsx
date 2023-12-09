@@ -1,37 +1,46 @@
 import React, { useState } from 'react';
 import './DataTextField.css';
 
-const DataTextField = ({ onInputChange })=> {
-    const [inputValue, setInputValue] = useState('');
+const DataTextField = ({ onInputChange }) => {
+  const [inputValue, setInputValue] = useState('');
 
-    const handleChange = (event) => {
-        const value = event.target.value;
-        setInputValue(value);
-    };
+  const handleChange = (event) => {
+    const value = event.target.value;
+    setInputValue(value);
+  };
 
-    const handleKeyDown = (event) => {
-        if (event.key === 'Enter') {
-            onInputChange(inputValue);
-        }
-    };
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter' && !event.shiftKey) {
+      event.preventDefault();
+      onInputChange(inputValue);
+    }
+  };
 
-    const handleClick = () => {
-        onInputChange(inputValue);
-    };
+  const handleClick = () => {
+    onInputChange(inputValue);
+  };
 
-    return (
-        <div>
-        <label htmlFor="inputField">Enter Text:</label>
-        <input
-            type="text"
-            id="inputField"
-            value={inputValue}
-            onChange={handleChange}
-            onKeyDown={handleKeyDown}
+  return (
+    <div className="flex flex-col items-center mt-4 w-full max-w-screen-md">
+      <div className="flex w-full border p-2 rounded-md space-x-2">
+        <textarea
+          id="inputField"
+          value={inputValue}
+          onChange={handleChange}
+          placeholder="Type here..."
+          className="resize-none p-2 w-full"
+          rows={1}
+          cols={100}
         />
-      <button className='black_btn' onClick={handleClick}>Submit</button>
+        <button
+          className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800"
+          onClick={handleClick}
+        >
+          Submit
+        </button>
+      </div>
     </div>
-    );
-}
+  );
+};
 
 export default DataTextField;

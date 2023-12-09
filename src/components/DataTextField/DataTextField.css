@@ -3,3 +3,10 @@
 @tailwind utilities;
 
 
+.main-wrapper {
+    border: 2px black;
+    /* position: relative; */
+    /* bottom: 20px; */
+    display: flex;
+    flex-direction: row;
+}

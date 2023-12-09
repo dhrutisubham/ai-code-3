@@ -1,18 +1,19 @@
 import { useState } from 'react';
 import CodeTextArea from '../CodeTextArea/CodeTextArea.jsx';
 import DataTextField from '../DataTextField/DataTextField.jsx';
-
+import TypewriterTextBox from '../TypewritterTextBox/TypewritterTextBox.jsx';
 
 const ChatArea = () => {
-
     const [inputValue, setInputValue] = useState('');
+
     const handleInputChange = (value) => {
         setInputValue(value);
     };
 
     return (
-        <section className='chatArea'>
-            <CodeTextArea inputValue={inputValue}/>
+        <section className='chat-area  w-5/6 h-full overflow-auto mx-auto bg-gray-200 p-4'>
+            <CodeTextArea inputValue={inputValue} />
+            <TypewriterTextBox text={inputValue} />
             <DataTextField onInputChange={handleInputChange} />
         </section>
     );

@@ -1,0 +1,15 @@
+.typewriter {
+    display: flex;
+    overflow: hidden;
+    width: "75%";
+    border: 2px solid black;
+    white-space: nowrap;
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Courier New', monospace;
+    padding: 10px;
+}
+
+.text-paragraph {
+    border: 2px solid black;
+}

@@ -21,10 +21,11 @@ const CodeTextArea = ({ inputValue }) => {
             highlight={(code) => highlight(code, languages.js)}
             style={{
                 fontFamily: "monospace",
-                fontSize: 17,
-                border: "1px solid black"
+                fontSize: 12,
+                border: "1px solid black",
+                width: "100%",
             }}
-    />
+        />
     );
 };
 
