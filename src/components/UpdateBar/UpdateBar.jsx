@@ -19,7 +19,7 @@ const eventsList={
 
 const UpdateBar = () => {
   return (
-    <div className='flex flex-col h-full gap-3 grow max-w-xs'>
+    <div className='flex flex-col h-full gap-3 grow max-w-xs overflow-visible'>
 
       <section className='navSection'>
         {/* Upload Button */}
@@ -46,21 +46,23 @@ const UpdateBar = () => {
         </section>
 
         {/* Right Pane */}
-        <section className='grow-[9999] flex flex-col gap-3 '>
+        <section className='grow-[9999] h-full flex flex-col gap-3 overflow-auto'>
           
           {/* Quick Updates  */}
           <section className='quickUpdates'>
             <h2 className='font-bold px-4 pb-3 pt-5'>Quick Updates</h2>
-            {
-              Object.entries(updatesList).map(([date, update])=>(
-                <a className='update' href="./">
-                  <h5 className='w-full text-xs  text-grey3'>{date}</h5>
-                  <h3 
-                  className='font-regular text-black1 font-medium w-full text-sm truncate'>
-                    {update}</h3>
-                </a>
-              ))
-            }
+            <section className='flex flex-col overflow-scroll snap-none p-0'>
+              {
+                Object.entries(updatesList).map(([date, update])=>(
+                  <a className='update' href="./">
+                    <h5 className='w-full text-xs  text-grey3'>{date}</h5>
+                    <h3 
+                    className='font-regular text-black1 font-medium w-full text-sm truncate'>
+                      {update}</h3>
+                  </a>
+                ))
+              }
+            </section>
 
             <a href='./'
             className='text-blue1 text-sm px-4 pb-4 pt-4 text-[0.8rem] font-medium underline hover:bg-white2'>
@@ -71,6 +73,8 @@ const UpdateBar = () => {
           {/* Event Details  */}
           <section className='quickUpdates'>
             <h2 className='font-bold px-4 pb-3 pt-5'>Event Details</h2>
+            <section className='flex flex-col overflow-scroll snap-none p-0'>
+
             {
               Object.entries(eventsList).map(([date, update])=>(
                 <section className='event'>
@@ -86,6 +90,7 @@ const UpdateBar = () => {
                 </section>
               ))
             }
+            </section>
 
             <a href='./'
             className='text-blue1 text-sm px-4 py-4 text-[0.8rem] font-medium underline hover:bg-white2'>

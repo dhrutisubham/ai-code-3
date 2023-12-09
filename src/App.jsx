@@ -9,7 +9,7 @@ function App() {
   return (
     <section className='h-full flex flex-row items-start'>
         <SideBar/>
-        <section className='p-3 grow-[9] gap-3 h-screen flex'>
+        <section className='p-3 grow-[9] gap-3 h-screen flex overflow-visible'>
           <section className='flex flex-col gap-3 h-full grow-[6]'>
             <NavBar></NavBar>
             <Home></Home>

@@ -23,6 +23,21 @@ body{
   height: fit-content;
   margin: 0;
   padding: 0;
+  overscroll-behavior: none;
+}
+
+::-webkit-scrollbar{
+  width:0.6rem;
+  height: 0;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 100vh;
+  border: 2px solid white; 
+  background-color: #EBEEF0;
+  
+  /* opacity: 0.2; */
 }
 
 
@@ -36,7 +51,7 @@ body{
 
 }
 .black_btn {
-  @apply font-bold rounded-lg border border-2 border-black1 bg-black1 py-3 px-5 text-white transition-all hover:bg-white hover:text-black1 text-center text-sm font-roboto flex items-center justify-center transition-all ease-in;
+  @apply font-bold rounded-lg border border-2 border-black1 bg-black1 py-3 px-5 text-white transition-all hover:text-base text-center text-sm font-roboto flex items-center justify-center transition-all ease-in ;
 }
 
 .outline_btn{
