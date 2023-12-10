@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './SideBar.css'
-import {Route, Routes, Link} from "react-router-dom"
+import {Route, Routes, Link, useNavigate} from "react-router-dom";
 import Home from '../../pages/Home/Home'
 
 const navPanelTop={
@@ -22,6 +22,8 @@ const navPanelBottom={
 }
 
 const SideBar = () => {
+
+  const history = useNavigate();
 
   const [isSelected, setIsSelected] = useState({
     'Home': true,
@@ -56,7 +58,7 @@ const SideBar = () => {
       <section className='flex flex-col drop-shadow bg-white1 z-0 relative pt-2'>
       {
         Object.entries(navPanelTop).map(([label, icon])=>(
-          <Link className='option' to={`/${label}`} onClick={() => handleOptionClick(label)}>
+          <Link className='option' to={`/${label==='Home'?'':label}`} onClick={() => handleOptionClick(label)}>
             <img
               className='navPanelOptionLogo'
               src={`public/assets/icons/SideBar/Navpanel/${icon}${isSelected[label]?'-selected':''}.svg`}

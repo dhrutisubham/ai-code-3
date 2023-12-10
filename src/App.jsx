@@ -16,7 +16,7 @@ function App() {
     <>
     
 
-    <section className='h-full flex flex-row items-start'>
+    <section className='h-full flex flex-row items-start overscroll-auto'>
         <SideBar/>
         <section className='p-3 grow-[3] gap-3 h-screen flex overflow-visible'>
           <section className='flex flex-col gap-3 h-full grow-[6]'>

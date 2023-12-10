@@ -1,5 +1,5 @@
 .navBar{
-    @apply flex items-center gap-3 w-full max-h-16 min-h-[2.5rem] sticky;
+    @apply flex items-center gap-3 w-full max-h-16 sticky;
     height: 8%;
 }
 

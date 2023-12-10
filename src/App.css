@@ -48,10 +48,7 @@ body{
 
 }
 
-.main{
-  @apply h-screen flex flex-col grow-[9] items-stretch p-5;
 
-}
 .black_btn {
   @apply font-bold rounded-lg border border-2 border-black1 bg-black1 py-3 px-5 text-white transition-all hover:text-base text-center text-sm font-roboto flex items-center justify-center transition-all ease-in ;
 }

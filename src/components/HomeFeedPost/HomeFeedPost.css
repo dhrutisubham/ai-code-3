@@ -1,0 +1,13 @@
+.postProfileHead{
+
+    @apply flex gap-3 max-h-12 py-1 bg-white1 rounded-xl min-w-[150px];
+}
+
+.interactionButton{
+    @apply flex gap-1 h-full items-center bg-white3 rounded-md p-1 px-2 pr-3 hover:bg-white2;
+}
+
+.interactionIcon{
+    @apply aspect-square w-8/12;
+
+}
