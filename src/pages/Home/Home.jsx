@@ -17,7 +17,7 @@ const Users={
 
   },
   User3:{
-    userPfp:'Ankur-Kumar',
+    userPfp:'Ankur-Kumar2',
     userName: 'Ankur Kumar',
     userTag: 'MIT 2012',
 
