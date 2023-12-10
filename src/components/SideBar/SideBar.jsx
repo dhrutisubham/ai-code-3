@@ -48,7 +48,7 @@ const SideBar = () => {
       <a className='logoContainer' href='./'>
       <img
         className='trumioLogo'
-        src='public/assets/icons/SideBar/TrumioYlogo.svg'
+        src='assets/icons/SideBar/TrumioYlogo.svg'
         alt='TrumioY Logo'
       />
       </a>
@@ -61,7 +61,7 @@ const SideBar = () => {
           <Link className='option' to={`/${label==='Home'?'':label}`} onClick={() => handleOptionClick(label)}>
             <img
               className='navPanelOptionLogo'
-              src={`public/assets/icons/SideBar/Navpanel/${icon}${isSelected[label]?'-selected':''}.svg`}
+              src={`assets/icons/SideBar/Navpanel/${icon}${isSelected[label]?'-selected':''}.svg`}
               alt={`${label} Icon`}
             ></img>
             <span 
@@ -81,7 +81,7 @@ const SideBar = () => {
           <a className='option' href="./">
             <img
               className='navPanelOptionLogo -rotate-90'
-              src={`public/assets/icons/SideBar/Navpanel/dropdown.svg`}
+              src={`assets/icons/SideBar/Navpanel/dropdown.svg`}
               alt={`Dropdown Icon`}
             ></img>
             <span 
@@ -100,7 +100,7 @@ const SideBar = () => {
           <a className='option' href={`./${label}`}>
             <img
               className='navPanelOptionLogo'
-              src={`public/assets/icons/SideBar/Navpanel/${icon}.svg`}
+              src={`assets/icons/SideBar/Navpanel/${icon}.svg`}
               alt={`${label} Icon`}
             ></img>
             <span 

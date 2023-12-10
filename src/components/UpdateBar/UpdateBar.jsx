@@ -24,7 +24,7 @@ const UpdateBar = () => {
       <section className='navSection'>
         {/* Upload Button */}
         <button className='navButton'>
-              <img src='public/assets/icons/NavBar/upload.svg' 
+              <img src='assets/icons/NavBar/upload.svg' 
                   alt='Upload Icon'
                   className='icon'
 
@@ -33,7 +33,7 @@ const UpdateBar = () => {
 
           {/* Notification Button */}
           <button className='navButton'>
-              <img src='public/assets/icons/NavBar/notification.svg' 
+              <img src='assets/icons/NavBar/notification.svg' 
                   alt='Notification Icon'
                   className='icon'
               ></img>

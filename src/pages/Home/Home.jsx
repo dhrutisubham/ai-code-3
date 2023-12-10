@@ -44,7 +44,7 @@ const postArray=[
     user: Users['User1'],
     postTitle:'Tech Trends Unveiled: Navigating the Ever-Evolving Landscape',
     postDesc: "In today's tech realm, the landscape is abuzz with transformative trends. The Metaverse is no longer a dream but a tech giant's investment in immersive digital worlds for gaming and social connections. AI's omnipresence reshapes industries, while blockchain extends beyond crypto to revamp trust paradigms in supply chains and voting systems. Edge computing's surge empowers real-time data processing, while quantum computing's potential looms large. Cybersecurity is pivotal amid evolving threats, and sustainability is a collective tech goal, from energy-efficient designs to remote work tools enhancing collaboration. These trends intersect, demanding adaptability and continuous learning to innovate at this evolving crossroads. Navigating this landscape requires curiosity, interdisciplinary collaboration, and harnessing these advancements to craft an inclusive, sustainable, and groundbreaking tech future. Embrace change, stay agile, and shape the future of tech at the convergence of these transformative technologies.",
-    postImg:'/public/assets/pfp/Ankur-Kumar.png',
+    postImg:'/assets/pfp/Ankur-Kumar.png',
     postDetails: {
       likes: 120,
       comments: 43,
