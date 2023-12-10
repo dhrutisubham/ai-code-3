@@ -19,7 +19,7 @@ const eventsList={
 
 const UpdateBar = () => {
   return (
-    <div className='flex flex-col h-full gap-3 grow max-w-xs overflow-visible'>
+    <div className='flex flex-col h-full gap-3 basis-1/4 max-w-xs overflow-visible'>
 
       <section className='navSection'>
         {/* Upload Button */}

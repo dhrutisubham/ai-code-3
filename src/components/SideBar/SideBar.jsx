@@ -16,7 +16,7 @@ const navPanelMid={
 }
 
 const navPanelBottom={
-  'Trumio Fans': 'fans',
+  'Trumio Learn': 'fans',
   'Trumio Playground': 'playground',
   'Trumio MarketPlace': 'marketplace',
 }

@@ -48,7 +48,14 @@ body{
 
 }
 
+.home{
+  @apply rounded-lg overflow-scroll;
 
+}
+
+.home::-webkit-scrollbar{
+  width: 0;
+}
 .black_btn {
   @apply font-bold rounded-lg border border-2 border-black1 bg-black1 py-3 px-5 text-white transition-all hover:text-base text-center text-sm font-roboto flex items-center justify-center transition-all ease-in ;
 }
