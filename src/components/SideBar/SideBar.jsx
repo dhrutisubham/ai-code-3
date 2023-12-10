@@ -1,4 +1,4 @@
-import React, { lazy } from 'react'
+import React, { useState } from 'react'
 import './SideBar.css'
 import {Route, Routes, Link} from "react-router-dom"
 import Home from '../../pages/Home/Home'
@@ -20,13 +20,24 @@ const navPanelBottom={
   'Trumio Playground': 'playground',
   'Trumio MarketPlace': 'marketplace',
 }
-const isSelected={
-  'Home': true,
-  'Questions': false,
-  'Connections': false,
-  'Projects': false,
-};
+
 const SideBar = () => {
+
+  const [isSelected, setIsSelected] = useState({
+    'Home': true,
+    'Questions': false,
+    'Connections': false,
+    'Projects': false,
+  });
+
+  const handleOptionClick = (label) => {
+    const updatedIsSelected = { ...isSelected };
+    Object.keys(updatedIsSelected).forEach((key) => {
+      updatedIsSelected[key] = key === label;
+    });
+    setIsSelected(updatedIsSelected);
+  };
+
   return (
 
     <>
@@ -45,14 +56,14 @@ const SideBar = () => {
       <section className='flex flex-col drop-shadow bg-white1 z-0 relative pt-2'>
       {
         Object.entries(navPanelTop).map(([label, icon])=>(
-          <Link className='option' to={`/${label}`}>
+          <Link className='option' to={`/${label}`} onClick={() => handleOptionClick(label)}>
             <img
               className='navPanelOptionLogo'
               src={`public/assets/icons/SideBar/Navpanel/${icon}${isSelected[label]?'-selected':''}.svg`}
               alt={`${label} Icon`}
             ></img>
             <span 
-            className={`font-${isSelected[label]?'bold text-black1':'regular text-grey1'} text-sm`}>
+            className={`font-${isSelected[label]?'bold text-black1':'regular text-grey6'} text-sm`}>
               {label}</span>
           </Link>
         ))
@@ -72,7 +83,7 @@ const SideBar = () => {
               alt={`Dropdown Icon`}
             ></img>
             <span 
-            className='font-regular text-black1 text-sm'>
+            className='font-regular text-grey6 text-sm'>
               {label}</span>
           </a>
         ))
