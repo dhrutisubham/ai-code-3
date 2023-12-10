@@ -1,12 +1,22 @@
 .chat-area {
     display: flex;
-    border: 2px solid red;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    overflow-y: scroll;
-    padding: 10px;
+    overflow-y: hidden;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+}
+
+.responseArea{
+    @apply flex flex-col overflow-scroll gap-4 w-full h-fit justify-start;
+}
+
+.responseArea::-webkit-scrollbar{
+    width: 0;
+}
+
+.output{
+    @apply flex flex-col gap-2;
 }

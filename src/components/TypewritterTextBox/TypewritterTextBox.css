@@ -1,15 +1,12 @@
 .typewriter {
     display: flex;
-    overflow: hidden;
-    width: "75%";
-    border: 2px solid black;
-    white-space: nowrap;
-    margin: 0;
-    font-size: 1em;
+    overflow: visible;
     font-family: 'Courier New', monospace;
-    padding: 10px;
+    width: 100%;
+    
+    @apply border border-white3 rounded-lg text-sm h-fit;
 }
 
 .text-paragraph {
-    border: 2px solid black;
+
 }

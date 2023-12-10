@@ -5,6 +5,7 @@ import { highlight, languages } from "prismjs/components/prism-core";
 import "prismjs/components/prism-clike";
 import "prismjs/components/prism-javascript";
 import "prismjs/themes/prism.css";
+import './CodeTextArea.css'
 
 const CodeTextArea = ({ inputValue }) => {
     const [code , setCode] = useState(inputValue);
@@ -22,9 +23,17 @@ const CodeTextArea = ({ inputValue }) => {
             style={{
                 fontFamily: "monospace",
                 fontSize: 12,
-                border: "1px solid black",
+                border: "1px solid #EBEEF0",
+                borderRadius: "8px",
                 width: "100%",
+                height: "fit-content",
+                overflow: "visible"
+                
             }}
+            readOnly={true}
+            placeHolder= {'Code Area'}
+            textareaClassName= {'editorText'}
+
         />
     );
 };

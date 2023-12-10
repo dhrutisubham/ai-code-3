@@ -21,19 +21,19 @@ const DataTextField = ({ onInputChange }) => {
   };
 
   return (
-    <div className="flex flex-col items-center mt-4 w-full max-w-screen-md">
-      <div className="flex w-full border p-2 rounded-md space-x-2">
+    <div className="sticky bottom-0 bg-white1 flex flex-col items-center mt-2 w-full p-2 border border-white3 rounded-lg">
+      <div className="flex w-full items-end space-x-2">
         <textarea
           id="inputField"
           value={inputValue}
           onChange={handleChange}
-          placeholder="Type here..."
-          className="resize-none p-2 w-full"
+          placeholder="Enter your Code here..."
+          className="resize-none overflow-y-auto max-h-64 h-fit p-2 pl-4 w-full rounded-lg enabled:outline-none"
           rows={1}
-          cols={100}
+
         />
         <button
-          className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800"
+          className="black_btn max-h-10"
           onClick={handleClick}
         >
           Submit

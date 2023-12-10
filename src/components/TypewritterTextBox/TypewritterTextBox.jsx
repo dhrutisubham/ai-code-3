@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './TypewritterTextBox.css'
 
 const TypewriterTextBox = ({ text }) => {
   const [displayText, setDisplayText] = useState('');
@@ -22,8 +23,8 @@ const TypewriterTextBox = ({ text }) => {
   }, [text]);
 
   return (
-    <div className="typewriter p-4 max-w-screen-md overflow-auto border border-light-black rounded">
-      <p className='text-paragraph text-left max-w-5'>
+    <div className="typewriter w-full">
+      <p className='text-paragraph p-4 text-left'>
         {displayText}
       </p>
     </div>
