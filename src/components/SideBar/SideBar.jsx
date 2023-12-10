@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import './SideBar.css'
-
+import {Route, Routes, Link} from "react-router-dom"
+import Home from '../../pages/Home/Home'
 
 const navPanelTop={
   'Home': 'home',
@@ -8,6 +9,7 @@ const navPanelTop={
   'Connections': 'connections',
   'Projects' : 'projects',
 }
+
 const navPanelMid={
   'Clubs': ['home'],
   'Societies': ['question'],
@@ -26,7 +28,10 @@ const isSelected={
 };
 const SideBar = () => {
   return (
-    <section className='sideBar'>
+
+    <>
+
+    <nav className='sideBar'>
       <a className='logoContainer' href='./'>
       <img
         className='trumioLogo'
@@ -40,7 +45,7 @@ const SideBar = () => {
       <section className='flex flex-col drop-shadow bg-white1 z-0 relative pt-2'>
       {
         Object.entries(navPanelTop).map(([label, icon])=>(
-          <a className='option' href="./">
+          <Link className='option' to={`/${label}`}>
             <img
               className='navPanelOptionLogo'
               src={`public/assets/icons/SideBar/Navpanel/${icon}${isSelected[label]?'-selected':''}.svg`}
@@ -49,7 +54,7 @@ const SideBar = () => {
             <span 
             className={`font-${isSelected[label]?'bold text-black1':'regular text-grey1'} text-sm`}>
               {label}</span>
-          </a>
+          </Link>
         ))
       }
       </section>
@@ -79,7 +84,7 @@ const SideBar = () => {
       <section className='flex flex-col drop-shadow bg-white1 -z-10 relative pt-2'>
       {
         Object.entries(navPanelBottom).map(([label, icon])=>(
-          <a className='option' href="./">
+          <a className='option' href={`./${label}`}>
             <img
               className='navPanelOptionLogo'
               src={`public/assets/icons/SideBar/Navpanel/${icon}.svg`}
@@ -92,7 +97,8 @@ const SideBar = () => {
         ))
       }
       </section>
-    </section>
+    </nav>
+    </>
   )
 }
 

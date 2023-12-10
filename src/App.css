@@ -42,7 +42,9 @@ body{
 
 
 .sideBar{
-  flex-grow: 1;
+  flex-basis: 25%;
+  min-width: 250px;
+  max-width: 300px;
 
 }
 

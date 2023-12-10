@@ -11,7 +11,7 @@ const ChatArea = () => {
     };
 
     return (
-        <section className='chat-area  w-5/6 h-full overflow-auto mx-auto bg-gray-200 p-4'>
+        <section className='chat-area w-full h-full overflow-auto  bg-gray-200 p-4'>
             <CodeTextArea inputValue={inputValue} />
             <TypewriterTextBox text={inputValue} />
             <DataTextField onInputChange={handleInputChange} />

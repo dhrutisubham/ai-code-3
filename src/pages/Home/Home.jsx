@@ -2,7 +2,7 @@ import React from 'react'
 import './Home.css'
 import ChatArea from '../../components/ChatArea/ChatArea'
 
-const home = () => {
+const Home = () => {
   return (
     <section className='h-full rounded-lg'>
       Home
@@ -10,4 +10,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home

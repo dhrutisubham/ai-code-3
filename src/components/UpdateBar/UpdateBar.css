@@ -13,11 +13,11 @@
 }
 
 .event{
-    @apply flex justify-between px-4 py-2 
+    @apply flex justify-between px-4 py-2 items-center
     /* hover:bg-white2  */
     ;
 }
 
 .eventDetail{
-    @apply  flex flex-col items-center justify-start ;
+    @apply  flex flex-col items-center justify-start gap-0.5;
 }
