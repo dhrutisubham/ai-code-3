@@ -8,7 +8,7 @@ const HomeFeedPost = (post) => {
         <section className='postProfileHead'>
         <img 
             className='rounded-full aspect-square h-full'
-            src={`public/assets/pfp/${post['user']['userPfp']}.png`}
+            src={`assets/pfp/${post['user']['userPfp']}.png`}
             alt='Profile Picture'
         />
         <div className='flex flex-col gap-[0.05rem]'>
@@ -35,7 +35,7 @@ const HomeFeedPost = (post) => {
         <section className='flex gap-2 text-black2  text-xs font-medium items-center w-full h-max-10 mt-4 min-h-max'>
             <div className='interactionButton'>
                 <img 
-                    src='/public/assets/icons/PostDetails/Like_Selected.svg'
+                    src='/assets/icons/PostDetails/Like_Selected.svg'
                     alt='Like Button'
                     className='interactionIcon'
                 />
@@ -43,7 +43,7 @@ const HomeFeedPost = (post) => {
             </div>
             <div className='interactionButton'>
                 <img 
-                    src='/public/assets/icons/PostDetails/Comment.svg'
+                    src='/assets/icons/PostDetails/Comment.svg'
                     alt='Comment Button'
                     className='interactionIcon'
                 />
@@ -51,7 +51,7 @@ const HomeFeedPost = (post) => {
             </div>
             <div className='interactionButton'>
                 <img 
-                    src='/public/assets/icons/PostDetails/Reshare.svg'
+                    src='/assets/icons/PostDetails/Reshare.svg'
                     alt='Reshare Button'
                     className='interactionIcon'
                 />
@@ -59,7 +59,7 @@ const HomeFeedPost = (post) => {
             </div>
             <div className='interactionButton'>
                 <img 
-                    src='/public/assets/icons/PostDetails/Share.svg'
+                    src='/assets/icons/PostDetails/Share.svg'
                     alt='Share Button'
                     className='interactionIcon'
                 />
@@ -67,7 +67,7 @@ const HomeFeedPost = (post) => {
             </div>
             <div className='interactionButton'>
                 <img 
-                    src='/public/assets/icons/PostDetails/Save.svg'
+                    src='/assets/icons/PostDetails/Save.svg'
                     alt='Save Button'
                     className='interactionIcon'
                 />

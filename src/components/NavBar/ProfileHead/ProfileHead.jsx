@@ -11,7 +11,7 @@ const ProfileHead = () => {
     <section className='profileHead'>
         <img 
             className='rounded-full'
-            src={`public/assets/pfp/${userPfp}.png`}
+            src={`/assets/pfp/${userPfp}.png`}
         />
         <div className='flex flex-col gap-[0.03rem]'>
             <h3 className='text-sm truncate'>{userName}</h3>
